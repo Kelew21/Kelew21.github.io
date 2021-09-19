@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/09/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>我的第一篇博客（功能测试）</title>
+    <url>/2021/09/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><p>这是我的第一篇hexo博客文章…</p>
+<span id="more"></span>
+<h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><p>23333</p>
+<h3 id="这个是三级标题"><a href="#这个是三级标题" class="headerlink" title="这个是三级标题"></a>这个是三级标题</h3><ul>
+<li>列表1</li>
+<li>列表2<br>  a子列表<br>  b子列表</li>
+<li>列表3</li>
+</ul>
+<hr>
+<p>test</p>
+<hr>
+<h2 id="插入网站示例："><a href="#插入网站示例：" class="headerlink" title="插入网站示例："></a>插入网站示例：</h2><p><a href="https://www.bilibili.com/">bilibili</a> </p>
+<h2 id="插入图片示例："><a href="#插入图片示例：" class="headerlink" title="插入图片示例："></a>插入图片示例：</h2><p><img src="https://wx2.sinaimg.cn/mw690/008dshLTgy1gumbboks19j60br0bq0t302.jpg" alt="图片"> </p>
+<p><em>字体是斜线的</em><br><strong>字体是加粗的</strong></p>
+<h2 id="单个代码测试："><a href="#单个代码测试：" class="headerlink" title="单个代码测试："></a>单个代码测试：</h2><p><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<h2 id="多行代码测试："><a href="#多行代码测试：" class="headerlink" title="多行代码测试："></a>多行代码测试：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main01(void)</span><br><span class="line">&#123;</span><br><span class="line">	int temp = 0; //中间变量</span><br><span class="line"></span><br><span class="line">	//冒泡排序的核心是相邻数字两两进行比较 进行交互 判断的关键在于前者大于后者 [i]&gt;[i+1] </span><br><span class="line">	int blbe[] = &#123; 12,32,14,62,27,8,89 &#125;;//-&gt; 8 12 14 27 32 62 89</span><br><span class="line">	</span><br><span class="line">	int len = sizeof(blbe) / sizeof(blbe[0]);</span><br><span class="line">	// 开始冒泡排序</span><br><span class="line">	//  </span><br><span class="line">	//外层循环</span><br><span class="line">	for (int i = 0; i &lt; len-1;i++) &#123;</span><br><span class="line">		//内层循环</span><br><span class="line">		for (int j = 0;j&lt;len-1-i;j++) &#123;</span><br><span class="line">			//判断交互条件</span><br><span class="line">			if (blbe[j] &gt; blbe[j + 1]) &#123;</span><br><span class="line">				temp = blbe[j];</span><br><span class="line">				blbe[j] = blbe[j + 1];</span><br><span class="line">				blbe[j + 1] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//打印交互后的数组</span><br><span class="line">	for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">		printf(&quot;blbe[%d]=%d\n&quot;, i, blbe[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="引用测试："><a href="#引用测试：" class="headerlink" title="引用测试："></a>引用测试：</h2><blockquote>
+<p>我的内容是引用的</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+        <tag>用法</tag>
+      </tags>
+  </entry>
+</search>
