@@ -33,7 +33,8 @@
 <p>test</p>
 <hr>
 <h2 id="插入网站示例："><a href="#插入网站示例：" class="headerlink" title="插入网站示例："></a>插入网站示例：</h2><p><a href="https://www.bilibili.com/">bilibili</a> </p>
-<h2 id="插入图片示例："><a href="#插入图片示例：" class="headerlink" title="插入图片示例："></a>插入图片示例：</h2><p><img src="https://wx2.sinaimg.cn/mw690/008dshLTgy1gumbboks19j60br0bq0t302.jpg" alt="图片"> </p>
+<h2 id="插入图片示例："><a href="#插入图片示例：" class="headerlink" title="插入图片示例："></a>插入图片示例：</h2><img src="/2021/09/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/q.JPG" class title="This is an 图片名 image">
+
 <p><em>字体是斜线的</em><br><strong>字体是加粗的</strong></p>
 <h2 id="单个代码测试："><a href="#单个代码测试：" class="headerlink" title="单个代码测试："></a>单个代码测试：</h2><p><code>&lt;html&gt;&lt;/html&gt;</code></p>
 <h2 id="多行代码测试："><a href="#多行代码测试：" class="headerlink" title="多行代码测试："></a>多行代码测试：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main01(void)</span><br><span class="line">&#123;</span><br><span class="line">	int temp = 0; //中间变量</span><br><span class="line"></span><br><span class="line">	//冒泡排序的核心是相邻数字两两进行比较 进行交互 判断的关键在于前者大于后者 [i]&gt;[i+1] </span><br><span class="line">	int blbe[] = &#123; 12,32,14,62,27,8,89 &#125;;//-&gt; 8 12 14 27 32 62 89</span><br><span class="line">	</span><br><span class="line">	int len = sizeof(blbe) / sizeof(blbe[0]);</span><br><span class="line">	// 开始冒泡排序</span><br><span class="line">	//  </span><br><span class="line">	//外层循环</span><br><span class="line">	for (int i = 0; i &lt; len-1;i++) &#123;</span><br><span class="line">		//内层循环</span><br><span class="line">		for (int j = 0;j&lt;len-1-i;j++) &#123;</span><br><span class="line">			//判断交互条件</span><br><span class="line">			if (blbe[j] &gt; blbe[j + 1]) &#123;</span><br><span class="line">				temp = blbe[j];</span><br><span class="line">				blbe[j] = blbe[j + 1];</span><br><span class="line">				blbe[j + 1] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//打印交互后的数组</span><br><span class="line">	for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">		printf(&quot;blbe[%d]=%d\n&quot;, i, blbe[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -48,5 +49,10 @@
         <tag>测试</tag>
         <tag>用法</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>photo2</title>
+    <url>/2021/09/20/photo2/</url>
+    <content><![CDATA[<img src="/2021/09/20/photo2/q.JPG" class title="This is an 图片名 image">]]></content>
   </entry>
 </search>
