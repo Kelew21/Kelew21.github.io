@@ -20,7 +20,7 @@
 <span id="more"></span>
 
 <h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库:"></a>搭建仓库:</h2><h3 id="github账号注册："><a href="#github账号注册：" class="headerlink" title="github账号注册："></a>github账号注册：</h3><ul>
-<li><p>具体流程可参考<a href="https://www.bilibili.com/read/cv5107169/">https://www.bilibili.com/read/cv5107169/</a></p>
+<li><p>参考<a href="https://www.bilibili.com/read/cv5107169/">https://www.bilibili.com/read/cv5107169/</a></p>
 </li>
 <li><p>生成ssh：<code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code><br>测试ssh是否绑定成功：<code>ssh -T git@github.com </code></p>
 </li>
