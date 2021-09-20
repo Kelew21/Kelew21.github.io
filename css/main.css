@@ -2318,7 +2318,7 @@ pre code {
 }
 .post-body p a {
   colar: #345;
-  border-bottom: none;
+  border-bottom: true;
 }
 .post-body p a:hover {
   color: #ffc0cb;
@@ -2850,7 +2850,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #054e9e;
+  background: #09ee98;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

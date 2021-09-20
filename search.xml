@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo搭建个人笔记</title>
+    <url>/2021/09/20/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="搭建前所需要的工具"><a href="#搭建前所需要的工具" class="headerlink" title="搭建前所需要的工具:"></a>搭建前所需要的工具:</h2><ul>
+<li><p><em>Node.js</em>: <a href="https://www.cnblogs.com/liuqiyun/p/8133904.html">安装教程</a></p>
+</li>
+<li><p><em>Git</em>:<a href="https://github.com/git-for-windows/git/releases/download/v2.11.0.windows.3/Git-2.11.0.3-64-bit.exe">下载链接</a>以及<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></p>
+</li>
+<li><p>检查<em>Node.js</em>和<em>Git</em>是否已安装完成</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v </span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
+<li><p><em>Hexo</em>下载</p>
+<p><code>npm install hexo-cli -g</code></p>
+</li>
+<li><p>同时<em>Hexo</em>检查是否已经安装完成</p>
+<p><code>hexo -v</code></p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库:"></a>搭建仓库:</h2><h3 id="github账号注册："><a href="#github账号注册：" class="headerlink" title="github账号注册："></a>github账号注册：</h3><ul>
+<li><p>具体流程可参考<a href="https://www.bilibili.com/read/cv5107169/">https://www.bilibili.com/read/cv5107169/</a></p>
+</li>
+<li><p>生成ssh：<code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code><br>测试ssh是否绑定成功：<code>ssh -T git@github.com </code></p>
+</li>
+</ul>
+<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装:"></a>hexo安装:</h2><ul>
+<li><p><code>npm install -g hexo</code> #安装hexo</p>
+</li>
+<li><p><code>hexo init</code> #初始化hexo博客</p>
+</li>
+<li><p><code>hexo s</code> # 启动服务</p>
+</li>
+<li><p>将以下代码替换<code>_config.yml</code>中<code>deploy</code>配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type:</span><br><span class="line">  repository: </span><br><span class="line">  branch: </span><br></pre></td></tr></table></figure></li>
+<li><p>安装<em>hexo-deployer-git</em>自动部署发布工具:<code>npm install hexo-deployer-git --save</code></p>
+</li>
+</ul>
+<h2 id="hexo常用指令："><a href="#hexo常用指令：" class="headerlink" title="hexo常用指令："></a>hexo常用指令：</h2><ul>
+<li><code>hexo clean</code>表示清除hexo缓存</li>
+<li><code>hexo s</code>表示在端口创建一个静态网站</li>
+<li><code>hexo g</code>表示生成更新配置文件</li>
+<li><code>hexo d</code>将静态网站信息同步于github远程仓库</li>
+</ul>
+<h2 id="主要参考视频"><a href="#主要参考视频" class="headerlink" title="主要参考视频:"></a>主要参考视频:</h2><ul>
+<li><a href="https://b23.tv/PETFTP">【2021最新版】保姆级Hexo+github搭建个人博客-哔哩哔哩</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第一篇博客（功能测试）</title>
     <url>/2021/09/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><p>这是我的第一篇hexo博客文章…</p>
